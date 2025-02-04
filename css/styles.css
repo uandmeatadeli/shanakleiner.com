@@ -7,19 +7,60 @@ html {
 body{
     width: 1000px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
+.hpContainer {
+    display: flex;
+    align-items: center;  /* Align content to the top */
+    gap: 80px;  /* Space between image and bio */
+}
+
+.headshot {
+    width: 250px;  /* Adjust image size */
+    height: auto;
+    display: block;
+    border-radius: 10px; /* Optional: rounded corners */
+    margin-bottom: 20px;
+}
+
+.iconContainer {
+    display: flex;
+    justify-content: center;  /* Center icons horizontally */
+    gap: 10px;  /* Space between icons */
+    margin-top: 10px;  /* Space between the image and icons */
+}
+
+/* Style for Icons */
+.icon {
+    width: 30px;  /* Set small size */
+    height: auto;
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Add Hover Effect */
+.icon-container img:hover {
+    transform: scale(1.2);  /* Slightly enlarge on hover */
+}
+
+.bio {
+    flex: 1; /* Allow the paragraph to take remaining space */
+    text-align: left;  /* Align text to the left */
 }
 
 h1{
     text-align: center;
 }
 
-img{
+/* img{
     display: block;
     margin: 0 auto;
     width: 50%;
     height: auto;
-}
+} */
 
 /* Position Menu Button at Top Right */
 #menu-btn {
