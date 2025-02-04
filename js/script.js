@@ -52,7 +52,7 @@ myButton.addEventListener("click", () =>{
 
 $(function(){
 
-    let menuPath = window.location.pathname.includes("/pages/") ? "../menu.html" : "menu.html"
+    let menuPath = window.location.pathname.includes("/pages/") ? "../menu.html" : "menu.html";
 
     $("#menu-container").load(menuPath, function(){
         const menu = document.getElementById("side-menu");
