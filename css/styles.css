@@ -24,6 +24,7 @@ img{
     font-size: 25px;
     padding: 10px;
     border: none;
+    background: white;
     color: black;
     cursor: pointer;
     position: fixed;
