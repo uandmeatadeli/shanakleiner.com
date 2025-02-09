@@ -1,11 +1,10 @@
 html {
     background-color: #fafafa;
-    /* Fonts: Alef, Consolas*/
-    font-family: 'Alef';
+    /* Fonts: Alef, Consolas, Robot Mono*/
+    font-family: 'Roboto Mono';
   }
 
 body{
-    width: 1000px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -16,22 +15,36 @@ body{
 .hpContainer {
     display: flex;
     align-items: center;  /* Align content to the top */
-    gap: 80px;  /* Space between image and bio */
+    gap: 100px;  /* Space between image and bio */
 }
 
+
 .headshot {
-    width: 250px;  /* Adjust image size */
+    width: 500px;  /* Adjust image size */
     height: auto;
     display: block;
-    border-radius: 10px; /* Optional: rounded corners */
     margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 100px;
+}
+
+.titleContainer h1{
+    margin: 0px;
+    font-family: 'Roboto Mono';
+    font-size: 40px;
+    font-weight: 100;
+}
+.titleContainer h3{
+    margin: 0px;
+    font-family: 'Roboto Mono';
+    font-size: 20px;
+    font-weight: 100;
 }
 
 .iconContainer {
     display: flex;
     justify-content: center;  /* Center icons horizontally */
     gap: 10px;  /* Space between icons */
-    margin-top: 10px;  /* Space between the image and icons */
 }
 
 /* Style for Icons */
@@ -47,8 +60,13 @@ body{
 }
 
 .bio {
+
     flex: 1; /* Allow the paragraph to take remaining space */
     text-align: left;  /* Align text to the left */
+    font-family: 'Roboto Mono';
+    font-size: 18px;
+    width: 1000px;
+    justify-content: center;
 }
 
 h1{
