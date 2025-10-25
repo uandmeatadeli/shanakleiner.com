@@ -1,77 +1,123 @@
 html {
-    background-color: #fafafa;
+    background-color: #ffff;
     /* Fonts: Alef, Consolas, Robot Mono*/
     font-family: 'Roboto Mono';
-  }
+}
 
-body{
-    margin: 0 auto;
+body {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
-.hpContainer {
+.content {
     display: flex;
-    align-items: center;  /* Align content to the top */
-    gap: 100px;  /* Space between image and bio */
+    flex-direction: row;
+    /* gap: 50px; */
 }
 
+.headshotContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Roboto Mono';
+    font-size: 16px;
+    text-align: center;
+}
 
 .headshot {
-    width: 500px;  /* Adjust image size */
+    width: 300px;
+    /* Adjust image size */
     height: auto;
-    display: block;
-    margin-bottom: 20px;
     margin-top: 20px;
-    margin-left: 100px;
+    margin-left: 20px;
 }
 
-.titleContainer h1{
+.emailLink {
+    color: black;
+}
+
+.titleContainer {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.titleContainer h1 {
     margin: 0px;
     font-family: 'Roboto Mono';
     font-size: 40px;
     font-weight: 100;
 }
-.titleContainer h3{
+
+.titleContainer h3 {
     margin: 0px;
     font-family: 'Roboto Mono';
     font-size: 20px;
     font-weight: 100;
 }
 
+.bioContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 150px;
+}
+
+.bio {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    text-align: left;
+    font-family: 'Roboto Mono';
+    width: 750px;
+    justify-content: center;
+    gap: 20px;
+}
+
+.bioIntro {
+    font-weight: 800;
+    font-size: 18px;
+
+}
+
+.bioBody {
+    font-size: 16px;
+    height: 100%;
+}
+
+h1 {
+    text-align: center;
+}
+
+.footer {
+    margin-top: 40px;
+    padding: 20px;
+    text-align: center;
+}
+
 .iconContainer {
     display: flex;
-    justify-content: center;  /* Center icons horizontally */
-    gap: 10px;  /* Space between icons */
+    justify-content: center;
+    /* Center icons horizontally */
+    gap: 10px;
+    /* Space between icons */
 }
 
 /* Style for Icons */
 .icon {
-    width: 30px;  /* Set small size */
+    width: 30px;
+    /* Set small size */
     height: auto;
     transition: transform 0.2s ease-in-out;
 }
 
 /* Add Hover Effect */
-.icon-container img:hover {
-    transform: scale(1.2);  /* Slightly enlarge on hover */
+.iconContainer .icon:hover {
+    transform: scale(1.2);
+    /* Slightly enlarge on hover */
 }
 
-.bio {
 
-    flex: 1; /* Allow the paragraph to take remaining space */
-    text-align: left;  /* Align text to the left */
-    font-family: 'Roboto Mono';
-    font-size: 18px;
-    width: 1000px;
-    justify-content: center;
-}
-
-h1{
-    text-align: center;
-}
 
 /* img{
     display: block;
@@ -90,7 +136,8 @@ h1{
     cursor: pointer;
     position: fixed;
     top: 10px;
-    right: 10px;  /* Moves the button to the right side */
+    right: 10px;
+    /* Moves the button to the right side */
     z-index: 1000;
 }
 
@@ -100,7 +147,8 @@ h1{
     width: 0;
     position: fixed;
     top: 0;
-    right: 0;  /* Change from left to right */
+    right: 0;
+    /* Change from left to right */
     background: white;
     overflow-x: hidden;
     transition: 0.4s;
@@ -123,9 +171,9 @@ h1{
 
 /* Close Button (Inside Menu) */
 #close-btn {
-    position: absolute;
+    /* position: absolute; */
     top: 10px;
-    left: 20px;
+    right: 20px;
     font-size: 30px;
     background: none;
     border: none;
