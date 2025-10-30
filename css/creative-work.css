@@ -2,7 +2,7 @@
     text-align: left;
 }
 
-.videosContainer {
+.creativeWorksContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -21,11 +21,11 @@
     gap: 50px;
 }
 
-.videoDescription {
+.description {
     width: 500px;
 }
 
-.videoSubtitle {
+.subtitle {
     font-weight: 600;
     margin-top: 25px;
 }

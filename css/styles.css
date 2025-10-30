@@ -2,11 +2,8 @@ html {
     background-color: #ffff;
     /* Fonts: Alef, Consolas, Robot Mono*/
     font-family: 'Roboto Mono';
-}
-
-body {
-    display: flex;
-    flex-direction: column;
+    height: 100%;
+    width: 100%;
 }
 
 .content {
@@ -16,6 +13,7 @@ body {
 }
 
 .headshotContainer {
+    position:absolute;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -30,6 +28,36 @@ body {
     height: auto;
     margin-top: 20px;
     margin-left: 20px;
+}
+
+.bioContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.bio {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    text-align: left;
+    font-family: 'Roboto Mono';
+    width: 750px;
+    justify-content: center;
+    gap: 20px;
+}
+
+.bioIntro {
+    font-weight: 800;
+    font-size: 18px;
+
+}
+
+.bioBody {
+    font-size: 16px;
+    height: 100%;
 }
 
 .emailLink {
@@ -53,36 +81,6 @@ body {
     font-family: 'Roboto Mono';
     font-size: 20px;
     font-weight: 100;
-}
-
-.bioContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-left: 150px;
-}
-
-.bio {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    text-align: left;
-    font-family: 'Roboto Mono';
-    width: 750px;
-    justify-content: center;
-    gap: 20px;
-}
-
-.bioIntro {
-    font-weight: 800;
-    font-size: 18px;
-
-}
-
-.bioBody {
-    font-size: 16px;
-    height: 100%;
 }
 
 h1 {
