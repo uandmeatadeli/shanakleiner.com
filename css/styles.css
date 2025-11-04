@@ -3,17 +3,19 @@ html {
     /* Fonts: Alef, Consolas, Robot Mono*/
     font-family: 'Roboto Mono';
     height: 100%;
-    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .content {
+    height: 100%;
     display: flex;
     flex-direction: row;
     /* gap: 50px; */
 }
 
 .headshotContainer {
-    position:absolute;
+    position: absolute;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -35,7 +37,8 @@ html {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .bio {
@@ -45,7 +48,7 @@ html {
     text-align: left;
     font-family: 'Roboto Mono';
     width: 750px;
-    justify-content: center;
+    align-items: center;
     gap: 20px;
 }
 
@@ -88,7 +91,8 @@ h1 {
 }
 
 .footer {
-    margin-top: 40px;
+    margin-top: auto;
+    /* margin-top: 40px; */
     padding: 20px;
     text-align: center;
 }
