@@ -39,28 +39,40 @@ html {
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
+
 }
 
 .bio {
     display: flex;
-    flex-direction: column;
     height: 100%;
     text-align: left;
     font-family: 'Roboto Mono';
-    width: 750px;
-    align-items: center;
     gap: 20px;
+    align-items: stretch;
 }
 
 .bioIntro {
-    font-weight: 800;
     font-size: 18px;
+    width: 350px;
+    background-image: url('../images/grey-background.jpeg');
+    /* Adjust the path if needed */
+    background-size: cover;
+    /* Ensures the image covers the entire container */
+    /* Centers the image */
+    background-repeat: no-repeat;
+    /* Prevents the image from repeating */
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
 }
 
 .bioBody {
     font-size: 16px;
     height: 100%;
+    width: 550px;
 }
 
 .emailLink {
@@ -68,7 +80,7 @@ html {
 }
 
 .titleContainer {
-    text-align: center;
+    text-align: Left;
     margin-bottom: 20px;
 }
 
@@ -87,7 +99,7 @@ html {
 }
 
 h1 {
-    text-align: center;
+    text-align: left;
 }
 
 .footer {

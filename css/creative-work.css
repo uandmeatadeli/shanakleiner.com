@@ -29,3 +29,21 @@
     font-weight: 600;
     margin-top: 25px;
 }
+
+.my-scar {
+    display: flex;
+    gap: 50px;
+}
+
+.my-scar-img-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 800px;
+}
+
+.my-scar-img {
+    width: auto;
+    height: 400px;
+}
