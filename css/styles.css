@@ -112,7 +112,6 @@ h1 {
 .iconContainer {
     display: flex;
     padding: 20px;
-
     justify-content: center;
     /* Center icons horizontally */
     gap: 10px;
