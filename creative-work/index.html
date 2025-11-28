@@ -5,21 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shana | Creative Work</title>
-    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Roboto Mono' rel='stylesheet'>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;800&family=Roboto+Mono:wght@400;700;800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/creative-work.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
-<body>
+<body style="padding: 10px 20px;box-sizing: border-box;">
     <h1 class="title">Creative Work</h1>
     <div class="creativeWorksContainer">
         <div class="ah-teng">
             <div class="videoContainer">
                 <iframe src="https://player.vimeo.com/video/458564610" width="640" height="360" frameborder="0"
                     allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-                <div class="subtitle">ah, Teng (2020) | Director</div>
+                <div class="subtitle"><span class="work-title">ah, Teng</span> (2020) | Director</div>
             </div>
             <div class="description">
                 ah, Teng is a poetic documentary set in a house in suburban New Jersey where Teng Teng, a mother of two
@@ -42,9 +43,10 @@
 
         <div class="life-of-abundance">
             <div class="videoContainer">
-                <iframe src="https://player.vimeo.com/video/907989999" width="640" height="360" frameborder="0"
-                    allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-                <div class="subtitle">Life of Abundance (2024) | Producer</div>
+                <iframe src="https://www.youtube.com/embed/DS6GsO1oDpQ" width="640" height="360" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                <div class="subtitle"><span class="work-title">Life of Abundance</span> (2024) | Producer</div>
             </div>
             <div class="description">
                 Directed by filmmaker Shawn Kornhauser and produced by Shana Kleiner, Life of Abundance is a short film
@@ -62,9 +64,19 @@
 
         <div class="Caretaker">
             <div class="pdf-container">
-                <embed src="../documents/creative-work/Caretaker.pdf" type="application/pdf" width="100%"
-                    height="600px" />
-                <div class="subtitle">Caretaker (2021)</div>
+                <div class="pdf-click-wrap" data-pdf-src="../documents/creative-work/Caretaker.pdf"
+                    data-render-scale="1.5">
+                    <canvas class="pdf-canvas" aria-label="Caretaker PDF page"></canvas>
+                    <button class="pdf-overlay" type="button" aria-label="Next page of Caretaker PDF"></button>
+                </div>
+                <div class="pdf-footer">
+                    <div class="subtitle"><span class="work-title">Caretaker</span> (2021)</div>
+                    <!-- <div class="pdf-controls">
+                        <button class="pdf-btn" data-pdf-prev aria-label="Previous page">◀</button>
+                        <div class="pdf-indicator" data-pdf-indicator>Page 1</div>
+                        <button class="pdf-btn" data-pdf-next aria-label="Next page">▶</button>
+                    </div> -->
+                </div>
             </div>
         </div>
 
@@ -75,7 +87,8 @@
                     <img src="../images/my-scar/my-scar-img2.png" alt="" class="my-scar-img">
                 </div>
                 <!-- <img src="../images/my-scar/my-scar-img3.png" alt=""> -->
-                <div class="subtitle">my scar from falling off a bike in August (2019)</div>
+                <div class="subtitle"><span class="work-title">my scar from falling off a bike in August</span> (2019)
+                </div>
             </div>
             <div class="description">
                 my scar from falling off a bike in August was a mixed-media installation at the Schick Art Gallery,
@@ -90,9 +103,19 @@
 
         <div class="facing-it">
             <div class="pdf-container">
-                <embed src="../documents/creative-work/Facing-It.pdf" type="application/pdf" width="100%"
-                    height="600px" />
-                <div class="subtitle">Facing It</div>
+                <div class="pdf-click-wrap" data-pdf-src="../documents/creative-work/Facing-It.pdf"
+                    data-render-scale="1.5">
+                    <canvas class="pdf-canvas" aria-label="Facing It PDF page"></canvas>
+                    <button class="pdf-overlay" type="button" aria-label="Next page of Facing It PDF"></button>
+                </div>
+                <div class="pdf-footer">
+                    <div class="subtitle"><span class="work-title">Facing It</span></div>
+                    <div class="pdf-controls">
+                        <button class="pdf-btn" data-pdf-prev aria-label="Previous page">◀</button>
+                        <div class="pdf-indicator" data-pdf-indicator>Page 1</div>
+                        <button class="pdf-btn" data-pdf-next aria-label="Next page">▶</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -100,6 +123,8 @@
     <div id="menu-container"></div>
 
     <script src="../js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+    <script src="../js/pdf-viewer.js"></script>
 </body>
 
 </html>
