@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shana | Policy</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;800&family=Roboto+Mono:wght@400;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/policy.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+
+    <h1>Policy</h1>
+
+    <div class="policy-container">
+        <div class="policy-item">
+            <a class="policy-title policy-title-link" href="../documents/policy-breifs/ITOW-policy-brief.pdf"
+                target="_blank" rel="noopener noreferrer">
+                In Their Own Words: Domestic Violence Survivors on Seeking Safety & Police Responses
+            </a>
+            <div class="pdf-click-wrap" data-pdf-src="../documents/policy-breifs/ITOW-policy-brief.pdf">
+                <canvas class="pdf-canvas" aria-label="ITOW Policy Brief page"></canvas>
+                <button class="pdf-overlay" type="button" aria-label="Next page of ITOW Policy Brief"></button>
+            </div>
+            <div class="pdf-footer">
+                <div class="pdf-controls">
+                    <button class="pdf-btn" data-pdf-prev aria-label="Previous page">◀</button>
+                    <div class="pdf-indicator" data-pdf-indicator>Page 1</div>
+                    <button class="pdf-btn" data-pdf-next aria-label="Next page">▶</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="policy-item">
+            <a class="policy-title policy-title-link"
+                href="../documents/policy-breifs/Tech Policy_Brief_ Social_work_in_data_science.pdf" target="_blank"
+                rel="noopener noreferrer">
+                Social Work in Data Science: Tech Policy Gaps and Addressing Harm
+            </a>
+            <div class="pdf-click-wrap"
+                data-pdf-src="../documents/policy-breifs/Tech Policy_Brief_ Social_work_in_data_science.pdf">
+                <canvas class="pdf-canvas" aria-label="Tech Policy Brief page"></canvas>
+                <button class="pdf-overlay" type="button" aria-label="Next page of Tech Policy Brief"></button>
+            </div>
+            <div class="pdf-footer">
+                <div class="pdf-controls">
+                    <button class="pdf-btn" data-pdf-prev aria-label="Previous page">◀</button>
+                    <div class="pdf-indicator" data-pdf-indicator>Page 1</div>
+                    <button class="pdf-btn" data-pdf-next aria-label="Next page">▶</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="menu-container"></div>
+
+    <script src="../js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+    <script src="../js/pdf-viewer.js"></script>
+</body>
+
+</html>

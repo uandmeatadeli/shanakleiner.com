@@ -4,10 +4,23 @@
     justify-content: space-between;
 }
 
-.research-image {
-    width: 25%;
-    height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: 250px;
+.research-list {
+    padding-left: 24px;
+    margin: 0 0 24px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.research-list li {
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    background: transparent;
+    line-height: 1.6;
+}
+
+.research-list a {
+    font-weight: 600;
+    text-decoration: underline;
 }

@@ -3,76 +3,106 @@ html {
     /* Fonts: Alef, Consolas, Robot Mono*/
     font-family: 'Roboto Mono';
     height: 100%;
-    display: flex;
-    flex-direction: column;
+}
+
+body {
+    transform: scale(0.9);
+    /* 90% like your browser zoom */
+    transform-origin: top left;
+    /* so it shrinks toward the top-left, not center */
+    width: 111.111%;
 }
 
 .content {
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    /* gap: 50px; */
+    max-height: 90%;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto;
+    gap: 24px;
+    padding: 20px;
+    padding-right: 200px;
+    box-sizing: border-box;
+    align-items: start;
 }
 
 .headshotContainer {
-    position: absolute;
     display: flex;
     flex-direction: column;
     align-items: center;
     font-family: 'Roboto Mono';
     font-size: 16px;
     text-align: center;
+    gap: 12px;
+    justify-self: start;
 }
 
 .headshot {
-    width: 300px;
-    /* Adjust image size */
+    width: 280px;
     height: auto;
-    margin-top: 20px;
-    margin-left: 20px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
 }
 
 .bioContainer {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-
+    width: 100%;
 }
 
 .bio {
     display: flex;
-    height: 100%;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1100px;
     text-align: left;
     font-family: 'Roboto Mono';
     gap: 20px;
     align-items: stretch;
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin: 0 auto;
 }
 
 .bioIntro {
     font-size: 18px;
-    width: 350px;
+    min-width: 300px;
+    max-width: 360px;
+    align-self: stretch;
     background-image: url('../images/grey-background.jpeg');
-    /* Adjust the path if needed */
     background-size: cover;
-    /* Ensures the image covers the entire container */
-    /* Centers the image */
     background-repeat: no-repeat;
-    /* Prevents the image from repeating */
     padding: 20px;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
-
+    text-align: center;
+    line-height: 1.6;
+    box-sizing: border-box;
 }
 
 .bioBody {
     font-size: 16px;
-    height: 100%;
-    width: 550px;
+    width: 100%;
+    max-width: 600px;
+}
+
+.bioColumns {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.bioIntro b {
+    font-weight: 800;
 }
 
 .emailLink {
@@ -105,7 +135,7 @@ h1 {
 .footer {
     margin-top: auto;
     /* margin-top: 40px; */
-    padding: 20px;
+    /* padding: 20px; */
     text-align: center;
 }
 
@@ -170,6 +200,7 @@ h1 {
     padding-top: 60px;
 }
 
+
 /* Menu Links */
 .menu a {
     padding: 15px;
@@ -194,4 +225,25 @@ h1 {
     border: none;
     color: black;
     cursor: pointer;
+}
+
+@media (max-width: 959px) {
+    .content {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        padding: 20px;
+    }
+
+    .bio {
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        max-width: 100%;
+    }
+
+    .bioIntro,
+    .bioBody {
+        max-width: 100%;
+        align-self: stretch;
+    }
 }

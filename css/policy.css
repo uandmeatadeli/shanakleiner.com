@@ -1,38 +1,138 @@
 h1 {
     text-align: center;
     margin: 20px 0;
-    font-size: 2rem;
 }
 
-.pdf-container {
-    display: flex; /* Use Flexbox to align items side by side */
-    justify-content: space-between; /* Add space between the briefs */
-    gap: 20px; /* Optional: Add spacing between the two briefs */
+.policy-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
     margin: 20px auto;
     padding: 10px;
-    background: #fff;
+    max-width: 1000px;
+    align-items: center;
+    transition: padding-right 0.4s ease, max-width 0.4s ease;
 }
 
-.document1,
-.document2 {
-    flex: 1; /* Make both briefs take up equal space */
-    background: #fff;
-    border: 1px solid #ddd;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-}
-
-.pdf-container h2 {
-    text-align: center;
-    margin-bottom: 10px;
-    font-size: 1.5rem;
-}
-
-.pdf-frame {
+.policy-item {
     width: 100%;
-    height: 100%;
-    min-height: 1200px; /* Ensure enough height for the PDF content */
+    max-width: 575px;
+    padding: 12px 10px 16px;
+}
+
+.policy-title {
+    font-size: 1.25rem;
+    font-weight: 300;
+    margin-bottom: 8px;
+}
+
+.policy-title-link {
+    color: inherit;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.policy-title-link:hover,
+.policy-title-link:focus-visible {
+    text-decoration: underline;
+    outline: none;
+}
+
+.pdf-click-wrap {
+    position: relative;
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto;
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.pdf-overlay {
+    position: absolute;
+    inset: 0;
+    background: transparent;
     border: none;
+    cursor: pointer;
+}
+
+.pdf-canvas {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: none;
+    background: #fff;
+}
+
+.pdf-footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 12px;
+    margin-top: 10px;
+    padding: 6px 8px;
+    border-radius: 6px;
+}
+
+.pdf-controls {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    justify-content: flex-end;
+    font-size: 10px;
+}
+
+.pdf-btn {
+    border: 1px solid #000;
+    background: #fff;
+    padding: 1px 4px;
+    cursor: pointer;
+    font-size: 10px;
+    line-height: 1.2;
+    border-radius: 4px;
+}
+
+.pdf-btn:hover {
+    background: #f0f0f0;
+}
+
+.pdf-btn:active {
+    background: #e5e5e5;
+}
+
+.pdf-btn:focus-visible {
+    outline: 2px solid #000;
+    outline-offset: 2px;
+}
+
+.pdf-indicator {
+    min-width: 64px;
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 10px;
+}
+
+.pdf-scroll {
+    width: 100%;
+    min-height: 1200px;
+    border: 1px solid #ddd;
     border-radius: 4px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .policy-container {
+        padding: 10px;
+    }
+
+    .policy-item,
+    .pdf-click-wrap {
+        max-width: 100%;
+    }
+
+    .pdf-btn {
+        padding: 4px 6px;
+    }
 }
