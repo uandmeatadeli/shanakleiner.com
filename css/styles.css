@@ -6,11 +6,25 @@ html {
 }
 
 body {
-    transform: scale(0.9);
-    /* 90% like your browser zoom */
-    transform-origin: top left;
-    /* so it shrinks toward the top-left, not center */
-    width: 111.111%;
+    margin: 0;
+    background-color: #ffff;
+    font-family: 'Roboto Mono';
+}
+
+/* Scale wrapper so the menu can stay fixed to the viewport */
+.page-scale {
+    /* Use zoom so layout and visuals shrink together (avoids extra blank space) */
+    zoom: 0.9;
+    width: 100%;
+}
+
+@supports not (zoom: 1) {
+    .page-scale {
+        /* Fallback for browsers without zoom */
+        transform: scale(0.9);
+        transform-origin: top left;
+        width: 111.111%;
+    }
 }
 
 .content {
