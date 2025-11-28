@@ -1,23 +1,53 @@
-.header {
+.research-page {
+    max-width: 1100px;
+    margin: 0 auto;
+    /* padding: 30px 20px 60px; */
+    line-height: 1.7;
+    padding-bottom: 30px;
+}
+
+.header h1 {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    margin-bottom: 0;
+    /* margin-bottom: 20px; */
+}
+
+.research-section {
+    /* margin-top: 30px; */
+}
+
+.research-section h2 {
+    margin-bottom: 12px;
+    font-size: 1.4rem;
 }
 
 .research-list {
-    padding-left: 24px;
-    margin: 0 0 24px 0;
+    list-style: none;
+    counter-reset: item;
+    padding: 0;
+    margin: 0;
     display: flex;
     flex-direction: column;
     gap: 14px;
 }
 
 .research-list li {
-    padding: 0;
-    border: none;
-    border-radius: 0;
-    background: transparent;
-    line-height: 1.6;
+    position: relative;
+    padding: 12px 14px 12px 38px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background: #fafafa;
+    counter-increment: item;
+}
+
+.research-list li::before {
+    content: counter(item) ".";
+    position: absolute;
+    left: 12px;
+    top: 12px;
+    font-weight: 600;
 }
 
 .research-list a {
