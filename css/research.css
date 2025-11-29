@@ -3,15 +3,15 @@
     margin: 0 auto;
     /* padding: 30px 20px 60px; */
     line-height: 1.7;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
 }
 
 .header h1 {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
     margin-bottom: 0;
-    /* margin-bottom: 20px; */
+    padding: 0 20px 0 20px;
 }
 
 .research-section {
