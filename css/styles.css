@@ -93,12 +93,11 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     text-align: center;
     line-height: 1.6;
     box-sizing: border-box;
+    display: grid;
+    align-content: center;
 }
 
 .bioBody {
@@ -135,7 +134,7 @@ body {
     font-weight: 100;
 }
 
-.titleContainer h3 {
+titleContainer h3 {
     margin: 0px;
     font-family: 'Roboto Mono';
     font-size: 20px;
